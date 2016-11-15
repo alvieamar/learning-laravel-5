@@ -11,15 +11,4 @@
 |
 */
 
-/**
- * Call a view to load directly 
- */
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-/**
- * Basic Routing
- */
-Route::get('/', 'WelcomeController@index');
-Route::get('/contact', 'WelcomeController@contact');
+Route::get('/about', 'PagesController@about');
