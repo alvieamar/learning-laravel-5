@@ -13,6 +13,15 @@ class PagesController extends Controller
     	$first = 'Fox';
     	$last = 'lazy';
 
-    	return view('pages.about', compact('first', 'last'));
+    	$people = [
+    		'Alvie', 'Alvee', 'Aisle Bee',
+    	];
+
+    	return view('pages.about', compact('first', 'last', 'people'));
+    }
+
+    public function contact() 
+    {
+    	return view('pages.contact');
     }
 }
