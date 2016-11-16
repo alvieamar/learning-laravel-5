@@ -1,10 +1,9 @@
-<!-- Basic View -->
-</!DOCTYPE html>
-<html>
-<head>
-	<title>Contact</title>
-</head>
-<body>
+@extends('app')
+
+@section('content')
 	<h1> Contact me! </h1>
-</body>
-</html>
+@stop
+
+@section('footer')
+	<script type="text/javascript">alert("I'm a script");</script>
+@stop
