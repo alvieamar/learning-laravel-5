@@ -8,20 +8,20 @@ use App\Http\Requests;
 
 class PagesController extends Controller
 {
-    public function about() 
+    public function about()
     {
-    	$first = 'Fox';
-    	$last = 'lazy';
+        $first = 'Fox';
+        $last = 'lazy';
 
-    	$people = [
-    		'Alvie', 'Alvee', 'Aisle Bee',
-    	];
+        $people = [
+            'Alvie', 'Alvee', 'Aisle Bee',
+        ];
 
-    	return view('pages.about', compact('first', 'last', 'people'));
+        return view('pages.about', compact('first', 'last', 'people'));
     }
 
-    public function contact() 
+    public function contact()
     {
-    	return view('pages.contact');
+        return view('pages.contact');
     }
 }
