@@ -31,7 +31,7 @@ class Article extends Model
         if (Input::get('published_at') >= Carbon::now()) {
             $this->attributes['published_at'] = Carbon::parse($date);
         } else {
-            $this->attributes['published_a t'] = Carbon::createFromFormat('Y-m-d',$date);
+            $this->attributes['published_at'] = Carbon::createFromFormat('Y-m-d',$date);
         }
     }
 }
